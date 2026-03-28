@@ -1,0 +1,7 @@
+{
+  "name": "Daikoku",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
