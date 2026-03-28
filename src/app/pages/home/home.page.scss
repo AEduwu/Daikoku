@@ -1,0 +1,11 @@
+.pie-chart {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px auto;
+
+  background: conic-gradient(
+    #4caf50 0% 60%,   /* restante */
+    #f44336 60% 100% /* gastado */
+  );
+}

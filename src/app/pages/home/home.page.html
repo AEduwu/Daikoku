@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Resumen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- 💰 PRESUPUESTO -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Presupuesto restante</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h2>$450.000</h2>
+
+      <!-- gráfico fake -->
+      <div class="pie-chart"></div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- 🎯 AHORROS -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ahorros actuales</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h2>$1.200.000</h2>
+
+      <ion-progress-bar value="0.6"></ion-progress-bar>
+      <p>60% de tu meta</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- 📊 GASTOS -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Gastos por categoría</ion-card-title>
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>🍔 Comida</ion-label>
+        <ion-note slot="end">$120.000</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>🚗 Transporte</ion-label>
+        <ion-note slot="end">$80.000</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>🏠 Vivienda</ion-label>
+        <ion-note slot="end">$200.000</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>💊 Emergencias</ion-label>
+        <ion-note slot="end">$50.000</ion-note>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>🎮 Ocio</ion-label>
+        <ion-note slot="end">$70.000</ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+</ion-content>
+
+<!-- 🔘 BOTONERA -->
+<ion-footer>
+  <ion-toolbar>
+
+    <ion-buttons>
+
+      <ion-button>
+        ➕ Movimiento
+      </ion-button>
+
+      <ion-button>
+        🎯 Meta
+      </ion-button>
+
+      <ion-button>
+        💰 Ingreso
+      </ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>

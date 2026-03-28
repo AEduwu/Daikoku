@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Comencemos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h2>💡 Comencemos!</h2>
+  <p>Rellena estos datos sobre tus expectativas de ahorro</p>
+
+  <!-- Ingresos -->
+  <ion-item>
+    <ion-label position="stacked">Ingresos mensuales netos</ion-label>
+    <ion-input type="number" placeholder="$"></ion-input>
+  </ion-item>
+
+  <!-- Ahorro objetivo -->
+  <ion-item>
+    <ion-label position="stacked">Objetivo de ahorro mensual</ion-label>
+    <ion-input type="number" placeholder="$"></ion-input>
+  </ion-item>
+
+  <!-- Ahorro actual -->
+  <ion-item>
+    <ion-label position="stacked">Ahorro actual</ion-label>
+    <ion-input type="number" placeholder="$"></ion-input>
+  </ion-item>
+
+  <!-- Frecuencia -->
+  <ion-item>
+    <ion-label>Frecuencia de ingresos</ion-label>
+    <ion-select>
+      <ion-select-option value="mensual">Mensual</ion-select-option>
+      <ion-select-option value="quincenal">Quincenal</ion-select-option>
+      <ion-select-option value="semanal">Semanal</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <!-- Objetivo -->
+  <ion-item>
+    <ion-label>¿Para qué quieres ahorrar?</ion-label>
+    <ion-select>
+      <ion-select-option value="viaje">Viaje</ion-select-option>
+      <ion-select-option value="casa">Casa</ion-select-option>
+      <ion-select-option value="emergencia">Fondo de emergencia</ion-select-option>
+      <ion-select-option value="otro">Otro</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <!-- Botón -->
+  <ion-button expand="full" routerLink="/home" class="ion-margin-top">
+    Finalizar registro
+  </ion-button>
+
+</ion-content>
