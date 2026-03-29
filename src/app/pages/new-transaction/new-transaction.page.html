@@ -1,13 +1,92 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>new-transaction</ion-title>
+    <ion-title>Nuevo movimiento</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">new-transaction</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+
+  <ion-card>
+
+    <ion-card-content>
+
+      <!-- Tipo -->
+      <ion-item>
+        <ion-label>Tipo</ion-label>
+        <ion-segment value="expense">
+          <ion-segment-button value="expense">
+            <ion-label>Gasto</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="income">
+            <ion-label>Ingreso</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-item>
+
+      <!-- Monto -->
+      <ion-item>
+        <ion-label position="stacked">Monto</ion-label>
+        <ion-input type="number" placeholder="$"></ion-input>
+      </ion-item>
+
+      <!-- Categoría ESTO DEBERIA DESAPARECER EN CASO DE INGRESO-->
+      <ion-item>
+        <ion-label position="stacked">Categoría</ion-label>
+        <ion-select placeholder="Selecciona categoría">
+          <ion-select-option value="food">Comida</ion-select-option>
+          <ion-select-option value="transport">Transporte</ion-select-option>
+          <ion-select-option value="housing">Vivienda</ion-select-option>
+          <ion-select-option value="emergency">Emergencias</ion-select-option>
+          <ion-select-option value="leisure">Ocio</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- Descripción -->
+      <ion-item>
+        <ion-label position="stacked">Descripción del gasto</ion-label>
+        <ion-input placeholder="Opcional"></ion-input>
+      </ion-item>
+
+      <!-- Fecha (Quizas se podria eliminar y solo usar la fecha actual)-->
+      <ion-item>
+        <ion-label position="stacked">Fecha</ion-label>
+        <ion-datetime presentation="date"></ion-datetime>
+      </ion-item>
+
+      <!-- Botón -->
+      <ion-button expand="block" class="ion-margin-top">
+        Guardar movimiento
+      </ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
 </ion-content>
+
+<!-- BOTONERA -->
+<ion-footer>
+  <ion-toolbar>
+
+    <ion-buttons>
+
+      <ion-button>
+        Resumen
+      </ion-button>
+
+      <ion-button>
+        Nuevo movimiento
+      </ion-button>
+
+      <ion-button>
+        Metas
+      </ion-button>
+
+      <ion-button>
+        Perfil
+      </ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>
