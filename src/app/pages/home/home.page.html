@@ -1,40 +1,51 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Resumen</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
 
-  <!-- 💰 PRESUPUESTO -->
-  <ion-card>
+  <!-- PRESUPUESTO -->
+<ion-card>
     <ion-card-header>
-      <ion-card-title>Presupuesto restante</ion-card-title>
+      <ion-card-title>Presupuesto</ion-card-title>
     </ion-card-header>
 
-    <ion-card-content>
-      <h2>$450.000</h2>
+  <ion-card-content>
 
-      <!-- gráfico fake -->
+    <h2 class="budget-amount">$450.000</h2>
+
+    <div class="budget-container">
+
+      <!-- gráfico -->
       <div class="pie-chart"></div>
-    </ion-card-content>
-  </ion-card>
 
-  <!-- 🎯 AHORROS -->
+      <!-- mascota: el diseno de la mascota deberia cambiar segun el dinero restante-->
+      <div class="mascot-container">
+        <img src="assets/images/placeholder-mascota.avif" alt="Mascota">
+      </div>
+
+    </div>
+
+  </ion-card-content>
+</ion-card>
+
+  <!-- metas: listado de metas de ahorro -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Ahorros actuales</ion-card-title>
+      <ion-card-title>Metas</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
-      <h2>$1.200.000</h2>
+      <h2>Viaje: $1.200.000</h2>
 
       <ion-progress-bar value="0.6"></ion-progress-bar>
       <p>60% de tu meta</p>
     </ion-card-content>
+        <ion-card-content>
+      <h2>Pagar tarjeta: $500.000</h2>
+
+      <ion-progress-bar value="0.3"></ion-progress-bar>
+      <p>60% de tu meta</p>
+    </ion-card-content>
   </ion-card>
 
-  <!-- 📊 GASTOS -->
+  <!-- gastos: listado de gastos por categoría -->
   <ion-card>
     <ion-card-header>
       <ion-card-title>Gastos por categoría</ion-card-title>
@@ -70,22 +81,26 @@
 
 </ion-content>
 
-<!-- 🔘 BOTONERA -->
+<!-- BOTONERA -->
 <ion-footer>
   <ion-toolbar>
 
     <ion-buttons>
 
       <ion-button>
-        ➕ Movimiento
+        Resumen
       </ion-button>
 
       <ion-button>
-        🎯 Meta
+        Nuevo movimiento
       </ion-button>
 
       <ion-button>
-        💰 Ingreso
+        Metas
+      </ion-button>
+
+      <ion-button>
+        Perfil
       </ion-button>
 
     </ion-buttons>
