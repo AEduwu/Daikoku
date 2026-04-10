@@ -1,18 +1,4 @@
 import {
-  e as e4
-} from "./chunk-GNWGUSZ7.js";
-import {
-  o as o5
-} from "./chunk-VTS6MUXF.js";
-import {
-  t as t6
-} from "./chunk-EEEAY7BB.js";
-import {
-  i as i5,
-  r as r3,
-  t as t5
-} from "./chunk-VHRMAIPY.js";
-import {
   a as a2,
   e as e3,
   f as f4,
@@ -23,6 +9,9 @@ import {
   p as p3,
   t as t4
 } from "./chunk-6COVZVAL.js";
+import {
+  e as e4
+} from "./chunk-GNWGUSZ7.js";
 import {
   $,
   A,
@@ -87,13 +76,13 @@ import {
   t2 as t3,
   x as x2,
   y as y2
-} from "./chunk-G3PG4MG4.js";
+} from "./chunk-RYEYIGP2.js";
 import {
   l as l2
-} from "./chunk-GB2TETKD.js";
+} from "./chunk-RWQ6Z4M2.js";
 import {
   i as i2
-} from "./chunk-6LMHDRJW.js";
+} from "./chunk-VX3I4KIN.js";
 import {
   B,
   D,
@@ -104,18 +93,25 @@ import {
   r,
   s as s2,
   v as v2
-} from "./chunk-FOXB2BIM.js";
+} from "./chunk-RO4IAZ7J.js";
 import {
   o as o3
-} from "./chunk-ZR6Q7TUJ.js";
+} from "./chunk-URFTZN5C.js";
+import {
+  o as o5
+} from "./chunk-VTS6MUXF.js";
 import {
   h,
   s as s3
 } from "./chunk-TCEW23F2.js";
 import {
-  d,
-  o
-} from "./chunk-WH2RCB7C.js";
+  t as t6
+} from "./chunk-EEEAY7BB.js";
+import {
+  i as i5,
+  r as r3,
+  t as t5
+} from "./chunk-VHRMAIPY.js";
 import {
   T,
   _,
@@ -153,19 +149,25 @@ import {
   u
 } from "./chunk-3B5L6JJ3.js";
 import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-TTMYTDMU.js";
+  d,
+  o
+} from "./chunk-WH2RCB7C.js";
 import {
   ActivatedRoute,
   Router
-} from "./chunk-HMBNPUDT.js";
-import "./chunk-F3BJAXJV.js";
+} from "./chunk-IX5DRTTE.js";
+import "./chunk-O7HDKYV6.js";
+import "./chunk-RILBFD2D.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-35SQXDJ4.js";
 import {
   CommonModule,
   Location,
   NgIf,
   NgTemplateOutlet
-} from "./chunk-YWXV2NGG.js";
+} from "./chunk-CL5ADAGK.js";
+import "./chunk-6UNWJBON.js";
 import {
   APP_INITIALIZER,
   Attribute,
@@ -2297,11 +2299,11 @@ var d6 = Dn(class extends I {
   componentDidLoad() {
     this.rIC((() => __async(this, null, function* () {
       const t14 = s4(window, "hybrid");
-      if (n.getBoolean("_testing") || import("./p-BgwEQWW6-JJDT656C.js").then(((t15) => t15.startTapClick(n))), n.getBoolean("statusTap", t14) && import("./p-CneGxKsZ-UCIFPERE.js").then(((t15) => t15.startStatusTap())), n.getBoolean("inputShims", m6())) {
+      if (n.getBoolean("_testing") || import("./p-BgwEQWW6-RRJKPZBO.js").then(((t15) => t15.startTapClick(n))), n.getBoolean("statusTap", t14) && import("./p-CneGxKsZ-UCIFPERE.js").then(((t15) => t15.startStatusTap())), n.getBoolean("inputShims", m6())) {
         const t15 = s4(window, "ios") ? "ios" : "android";
-        import("./p-Cwv-vmkN-3O3D6A2U.js").then(((e15) => e15.startInputShims(n, t15)));
+        import("./p-Cwv-vmkN-Z2FD6I5S.js").then(((e15) => e15.startInputShims(n, t15)));
       }
-      const e14 = yield import("./p-vEbVo2hO-FIFH3Y4Y.js"), i13 = t14 || o3();
+      const e14 = yield import("./p-vEbVo2hO-3CWHE2OB.js"), i13 = t14 || o3();
       n.getBoolean("hardwareBackButton", i13) ? e14.startHardwareBackButton() : (o3() && u("[ion-app] - experimentalCloseWatcher was set to `true`, but hardwareBackButton was set to `false`. Both config options must be `true` for the Close Watcher API to be used."), e14.blockHardwareBackButton()), "undefined" != typeof window && import("./p-D6Ynv7Xh-ZWOYARH5.js").then(((t15) => t15.startKeyboardAssist(window))), import("./p-BmVRXR1y-VDINOXZS.js").then(((t15) => this.focusVisible = t15.startFocusVisible()));
     })));
   }
